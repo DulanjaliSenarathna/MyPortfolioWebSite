@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -18,6 +19,8 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+
+/*Header*/
 
 header{
     position: absolute;
@@ -87,6 +90,7 @@ header .navbar ul li a:active::before{
     left: 0;
 }
 
+/*Home Section*/
 .home{
     min-height: 100vh;
     padding: 15px;
@@ -168,6 +172,100 @@ background-color: transparent;
 .home .home-content .block .cv-btn a:hover{
     background-color: #000000 ;
     color: #ffffff;
+}
+
+/*about me*/
+.about-me{
+    margin-top: -475px;
+    background-color: white;
+}
+
+.about-me .section-title{
+    
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    
+}
+.about-me .section-title h1{
+   font-size: 35px;
+   text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 10px;
+    position: relative;
+   
+}
+
+.about-me .section-title h1::before{
+content: '';
+left: 0;
+height: 2px;
+position: absolute;
+background-color: #febd01;
+right: 30%;
+bottom: 0px;
+}
+.text-uppercase{
+    text-transform: uppercase!important;
+}
+.about-me .section-title p.small{
+   font-size: 14px;
+    display: block;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.about-me .about-content .img{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.about-me .about-content .img img{
+   
+    display: block;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.about-me .about-content .text{
+    margin-top: -25px;
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding: 30px;
+}
+.about-me .about-content .text h4{
+font-size: 25px;
+font-weight: 600;
+margin: 0 0 5px;
+color: #000000;
+}
+.about-me .about-content .text h6{
+    font-size: 18px;
+font-weight: 500;
+margin: 0 0 15px;
+color: #000000;
+}
+
+.about-me .about-content .text h6 span{
+    color: #efbd01;
+}
+.about-me .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+}
+.about-me .about-content .text .social-links{
+    background-color: #000000;
+    
+  color: #ffffff;
+    border-radius: 3px;
+    line-height: 28px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
 }
 
 
